@@ -34,7 +34,7 @@ export default function Home() {
           background: info.gradient,
         }}
         //   width={{ xs: "35vh", md: "40vh" }}
-        //   height={{ xs: "35vh", md: "40vh" }}
+        //   ff
         //   borderRadius={"50%"}
         //   p={"0.75rem"}
         //   mb={{ xs: "1rem", sm: 0 }}

@@ -29,6 +29,11 @@ export default function BaseLayout() {
         flexDirection={"column"}
         minHeight={"100vh"}
         justifyContent={"space-between"}
+        sx={{
+          "@media (max-width: 780px)": {
+            padding: "1.2rem",
+          },
+        }}
       >
         <Grid item>
           <Navbar darkMode={darkMode} handleClick={handleClick} />
@@ -50,7 +55,15 @@ export default function BaseLayout() {
             sx={{ opacity: 0.7 }}
             width={"100%"}
           >
-            <Typography variant="h4" component="h4">
+            <Typography
+              variant="h4"
+              sx={{
+                "@media (max-width: 780px)": {
+                  fontSize: "1.2rem",
+                },
+              }}
+              component="h4"
+            >
               Scroll down
               <span className={Style1.handPointer} onClick={goToTop}>
                 ⬇️
